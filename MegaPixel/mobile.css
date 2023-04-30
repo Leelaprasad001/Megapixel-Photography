@@ -1,0 +1,163 @@
+/*responsive*/
+@media (max-width: 767px) {
+  /* Avoid  horizontal scrolling */
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  body.disabledScroll {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu-list.active {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    color: #000000;
+    font-size: 23px;
+  }
+  /* Home section */
+  .home-section {
+    width: 100vw;
+  }
+  .home-section .home-content {
+    max-width: 100vw;
+    padding: 5px;
+    margin: 0;
+  }
+  .home-section .home-content h1 {
+    letter-spacing: 3px;
+  }
+  /* About section */
+  .about-section .about-content {
+    max-width: 100vw;
+    text-align: center;
+    align-items: center;
+  }
+  .about-section .about-content p {
+    text-align: start;
+  }
+  .about-section .about-img {
+    max-width: 100vw;
+  }
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto);
+  }
+  /* Stats */
+  .about-section .about-content .stats .stats-box {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .stats .row {
+    display: grid;
+    grid-gap: 1em;
+  }
+  /* Services Section */
+  .service-section .service-item {
+    max-width: 100%;
+  }
+  .servies-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto);
+    grid-gap: 1em;
+  }
+  
+  /* Contact Me */
+  .contact-section .contact-form {
+    padding: 0 30px;
+  }
+  .contact-section .contact-form .form {
+    padding: 20px;
+  }
+  .contact-section .contact-form .form .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section .contact-form .form .input-group.left,
+  .contact-section .contact-form .form .input-group.right {
+    max-width: 100%;
+  }
+  .contact-section .contact-info .info-item {
+    max-width: 100%;
+  }
+  .contact-info .row {
+    display: grid;
+  }
+  .copyright {
+    padding: 10px;
+  }
+  
+}
+
+@media(max-width: 1000px){
+      .gallery .image{
+      width:calc(100% / 3);
+    }
+    }
+    @media(max-width: 800px){
+      .gallery .image{
+      width:calc(100% / 2);
+    }
+    }
+    @media(max-width: 700px){
+      nav .items{
+      max-width: 600px;
+    }
+    nav .items .item{
+      padding: 7px 15px;
+    }
+    }
+    @media(max-width: 600px){
+      nav .items{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav .items .item{
+      margin: 5px;
+    }
+    .gallery  .image{
+      width: 100%;
+    }
+    .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 250px;
+    background: #ffffff;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }.navbar .logo a {
+  color: #ffffff;
+  font-size: 40px;
+  font-family:none;
+  text-decoration: none;
+}
+    }
